@@ -9,7 +9,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     binding.pry
-    BRANDS.include? brand ? nil : BRANDS << brand
+    (BRANDS.include? brand) ? nil : BRANDS << brand
   end
 
   def cobble
